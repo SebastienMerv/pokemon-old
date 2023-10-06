@@ -1,35 +1,37 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poke API | Recherche de Pokémons</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
-    <input type="search" id="search">
+    <input type="search" id="search" placeholder="Name of a Pokemon">
     <div class="data_pokemon" id="data_pokemon">
         <div class="data_header">
-            <h1>Nom du pokémon : <span id="name"></span></h1>
+            <h1>Who's That Pokémon? <span id="name"></span></h1>
         </div>
         <div class="data_container">
-            <img id="img_poke"></img>
+            <img id="img_poke" alt="Image du pokémon"></img>
             <div class="specifies">
-            <div class="details_data">
-                <h3 id="details_title">Details Pokemon</h3>
-                <p id="height"></p>
-                <p id="weight"></p>
-                <p id="capture_rate"></p>
-                <p id="growth_rate"></p>
-                <p id="base_exp"></p>
+                <div class="details_data">
+                    <h3 id="details_title">Details Pokemon</h3>
+                    <p id="height"></p>
+                    <p id="weight"></p>
+                    <p id="capture_rate"></p>
+                    <p id="growth_rate"></p>
+                    <p id="base_exp"></p>
+                </div>
+                <div class="species_data">
+                    <h3 id="species_title">Species data</h3>
+                    <p id="habitat"></p>
+                    <p id="shape"></p>
+                    <p id="color"></p>
+                </div>
             </div>
-            <div class="species_data">
-                <h3 id="species_title">Species data</h3>
-                <p id="habitat"></p>
-                <p id="shape"></p>
-                <p id="color"></p>
-            </div>
-        </div>
         </div>
     </div>
     <div class="evolution_chain" id="evolution_chain">
@@ -42,4 +44,5 @@
     </div>
     <script src="index.js"></script>
 </body>
+
 </html>

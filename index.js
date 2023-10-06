@@ -1,17 +1,8 @@
 const input = document.getElementById('search');
 
-function lootId(value) {
-    fetch("https://pokeapi.co/api/v2/pokemon-species/" + value) 
-.then((resp) => resp.json())
-.then((data) => {
-    return data.id;
-})
-}
-
-
-
-
 input.addEventListener("change", (e) => {
+    // Retrait potentiel de la majuscule au début du mot
+    input.value = input.value.toLowerCase();
     fetch("https://pokeapi.co/api/v2/pokemon/" + input.value)
     .then((resp => resp.json()))
     .then ((data) => {
@@ -28,14 +19,28 @@ input.addEventListener("change", (e) => {
         document.getElementById('habitat').innerHTML = `Habitat: ${data.habitat["name"]}`;
         document.getElementById('shape').innerHTML = `Shape: ${data.shape["name"]}`
         document.getElementById('color').innerHTML = `Color: ${data.color["name"]}`
+        setEvolutions(data.id);
     })
     fetch("https://pokeapi.co/api/v2/pokemon/" + input.value)
     .then((resp) => resp.json())
     .then((data) => {
         document.getElementById('img_poke').src = data.sprites["front_default"];
     });
+
+
+
 })
 
 
 
 
+function setEvolutions(id) {
+    fetch("https://pokeapi.co/api/v2/evolution-chain/" + id)
+    .then((resp) => resp.json())
+    .then((data) => {
+        for(let i = 0; i < data.chain.evolves_to.length; i++) {
+            document.getElementById('evolutions').innerHTML += `<li>${data.chain.evolves_to[i].species["name"]}</li>`
+        }
+
+    })
+}

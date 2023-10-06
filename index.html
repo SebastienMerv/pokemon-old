@@ -8,7 +8,7 @@
 </head>
 <body>
     <input type="search" id="search">
-    <div class="data_pokemon">
+    <div class="data_pokemon" id="data_pokemon">
         <div class="data_header">
             <h1>Nom du pokémon : <span id="name"></span></h1>
         </div>
@@ -32,21 +32,13 @@
         </div>
         </div>
     </div>
-    <div class="evolution_chain">
+    <div class="evolution_chain" id="evolution_chain">
         <div class="data_header">
             <h1>Evolution Chain</h1>
         </div>
-        <div class="evol_chain">
-            <div class="poke_evol">
-                <p id="evolution"></p>
-            </div>    
-            <div class="poke_evol">
-                <p id="evolution1"></p>
-            </div>    
-            <div class="poke_evol">
-                <p id="evolution3"></p>
-            </div>    
-        </div>
+        <ul id="evolutions">
+
+        </ul>
     </div>
     <script src="index.js"></script>
 </body>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poke API | Recherche de Pokémons</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <input type="search" id="search">
+    <div class="data_pokemon">
+        <div class="data_header">
+            <h1>Nom du pokémon : <span id="name"></span></h1>
+        </div>
+        <div class="data_container">
+            <img id="img_poke"></img>
+            <div class="specifies">
+            <div class="details_data">
+                <h3 id="details_title">Details Pokemon</h3>
+                <p id="height"></p>
+                <p id="weight"></p>
+                <p id="capture_rate"></p>
+                <p id="growth_rate"></p>
+                <p id="base_exp"></p>
+            </div>
+            <div class="species_data">
+                <h3 id="species_title">Species data</h3>
+                <p id="habitat"></p>
+                <p id="shape"></p>
+                <p id="color"></p>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div class="evolution_chain">
+        <div class="data_header">
+            <h1>Evolution Chain</h1>
+        </div>
+        <div class="evol_chain">
+            <div class="poke_evol">
+                <p id="evolution"></p>
+            </div>    
+            <div class="poke_evol">
+                <p id="evolution1"></p>
+            </div>    
+            <div class="poke_evol">
+                <p id="evolution3"></p>
+            </div>    
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

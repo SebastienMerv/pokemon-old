@@ -1,0 +1,65 @@
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    width: 90%;
+}
+
+.data_pokemon {
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.data_header {
+    width: 100%;
+    text-align: center;
+    background-color: #5784BA;
+    border-radius: 8px 8px 0px 0px;
+    margin-bottom: 15px;
+}
+
+.data_container {
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.data_container img {
+    height: 100px;
+    width: 100px;
+}
+
+.specifies {
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+    justify-content: space-around;
+}
+#details_title {
+    color: #C18845;
+}
+
+#species_title {
+    color: #C18845;
+}
+
+.evolution_chain {
+    border: 1px solid black;
+    margin-top: 20px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 8px;
+}

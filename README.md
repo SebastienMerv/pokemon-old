@@ -14,3 +14,11 @@ Install my-project with git :
     git clone https://github.com/SebastienMerv/pokemon
 ```
     
+
+## Features
+
+- The searh of a Pokemon
+- The name, picture and stat of pokemon
+- ~~A back picture~~
+- ~~Autocomplétion in search~~
+
